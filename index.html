@@ -20,19 +20,24 @@
         header {
             background-color: #4CAF50;
             color: white;
-            padding: 10px 0;
+            padding: 10px 20px;
             text-align: center;
             position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
         header h1 {
             font-size: 2.5em;
             margin: 0;
         }
-        header img {
+        .qr-container {
             position: absolute;
-            top: 50%;
             right: 20px;
+            top: 50%;
             transform: translateY(-50%);
+        }
+        .qr-container img {
             width: 100px; /* Adjust the size as needed */
             height: auto;
         }
@@ -71,7 +76,9 @@
 <body>
     <header>
         <h1>Join SunShin Orchestra School</h1>
-        <img src="./sunshin_qr.png" alt="SunShin Orchestra QR Code">
+        <div class="qr-container">
+            <img src="./sunshin_qr.png" alt="SunShin Orchestra QR Code">
+        </div>
     </header>
     <div class="container">
         <section>
@@ -91,9 +98,9 @@
                 At SunShin Orchestra School, students have the opportunity to play a variety of instruments, participate in concerts, and join different orchestral groups tailored to their skill levels. Our goal is to foster a love for music and provide a supportive community where students can thrive. We also offer masterclasses, workshops, and opportunities to perform in prestigious events.
             </p>
         </section>
-            <div class="cta">
-              <button onclick="window.location.href='mailto:sunshinorchestra@gmail.com'">Contact Us Now</button>
-            </div>
+        <div class="cta">
+            <button onclick="window.location.href='mailto:sunshinorchestra@gmail.com'">Contact Us Now</button>
+        </div>
     </div>
 </body>
 </html>
