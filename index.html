@@ -32,6 +32,14 @@
             font-size: 2.5em;
             margin: 0;
         }
+        .blinking {
+            font-size: 2em;
+            color: red;
+            animation: blink 1s infinite;
+        }
+        @keyframes blink {
+            50% { opacity: 0; }
+        }
         p {
             font-size: 1.2em;
             line-height: 1.6;
@@ -121,6 +129,7 @@
 <body>
     <header>
         <h1>Welcome to SunShin Orchestra Summer School</h1>
+	<div class="blinking">Register by July 5th</div>
     </header>
     <div class="container">
         <section>
